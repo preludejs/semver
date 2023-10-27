@@ -2,8 +2,8 @@ import * as Cmp from '@prelude/cmp'
 import parse from './parse.js'
 import type { Semver } from './prelude.js'
 
-const cmp: Cmp.t<string | Semver> =
-  (a, b) => {
+const cmp =
+  <T extends string | Semver, U extends string | Semver>(a: T, b: U): Cmp.R => {
     if (typeof a === 'string') {
       return cmp(parse(a), b)
     }
