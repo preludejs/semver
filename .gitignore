@@ -6,3 +6,4 @@ wip
 configurationCache.log
 dryrun.log
 targets.log
+coverage

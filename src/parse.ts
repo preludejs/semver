@@ -2,7 +2,7 @@ import re from './re.js'
 
 const parse =
   (semver: string, date?: string) => {
-    const match = semver.match(re)
+    const match = re.exec(semver)
     if (!match) {
       throw new Error(`invalid semver ${semver}`)
     }
