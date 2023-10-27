@@ -1,6 +1,6 @@
 {
   "name": "@prelude/semver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Semver module.",
   "type": "module",
   "main": "./cjs/index.js",
