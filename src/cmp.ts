@@ -3,7 +3,7 @@ import parse from './parse.js'
 import type { Semver } from './prelude.js'
 
 const cmp =
-  <T extends string | Semver, U extends string | Semver>(a: T, b: U): Cmp.R => {
+  (a: string | Semver, b: string | Semver): Cmp.R => {
     if (typeof a === 'string') {
       return cmp(parse(a), b)
     }
