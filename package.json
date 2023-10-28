@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "make test",
+    "test": "jest --coverage",
     "preversion": "make test",
     "postversion": "make postversion"
   },
