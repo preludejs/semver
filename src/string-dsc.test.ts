@@ -10,7 +10,7 @@ test('simple', () => {
     '1.0.0-beta',
     '1.0.0-alpha.1',
     'v2.0.0'
-  ].sort(Semver.dsc)).toEqual([
+  ].sort(Semver.stringDsc)).toEqual([
     'v2.0.1',
     'v2.0.0',
     '1.1.0',
